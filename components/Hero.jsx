@@ -71,7 +71,7 @@ export default function Hero() {
               View my work
             </a>
             <a className="btn btn-solid" href="/resume.pdf" download>
-              Download CV
+              Download My CV
             </a>
           </div>
           <div className="sec-eyebrow" style={{ marginTop: "36px", marginBottom: "16px" }}>

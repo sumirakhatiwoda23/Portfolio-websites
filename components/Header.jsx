@@ -15,7 +15,7 @@ export default function Header() {
             </a>
           ))}
         </nav>
-        <a className="nav-cta" href={`mailto:${profile.email}`}>
+        <a className="nav-cta" href="#contact">
           Let&apos;s talk
         </a>
       </div>

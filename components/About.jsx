@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { about, profile } from "@/lib/data";
+import { FaLocationDot } from "react-icons/fa6";
 
 export default function About() {
+  const location = about.meta.find((item) => item.k === "Location");
+
   return (
     <section id="about">
       <div className="wrap about-grid">
@@ -10,7 +13,7 @@ export default function About() {
             <div className="about-card-inner">
               <div className="avatar-ring">
                 <Image
-                  src="/projects/profilepic.png"
+                  src="/projects/profilepic2.png"
                   alt={profile.name}
                   fill
                   sizes="130px"
@@ -27,14 +30,12 @@ export default function About() {
           {about.paragraphs.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
-          <div className="about-meta">
-            {about.meta.map((item) => (
-              <div key={item.k}>
-                <div className="k">{item.k}</div>
-                <div className="v">{item.v}</div>
-              </div>
-            ))}
-          </div>
+          {location && (
+            <div className="about-location">
+              <FaLocationDot />
+              <span>{location.v}</span>
+            </div>
+          )}
         </div>
       </div>
     </section>

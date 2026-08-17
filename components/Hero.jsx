@@ -70,11 +70,11 @@ export default function Hero() {
             <a className="btn btn-solid" href="#projects">
               View my work
             </a>
-            <a className="btn btn-outline" href={`mailto:${profile.email}`}>
-              Contact me
-            </a>
           </div>
-          <div className="hero-socials">
+          <div className="sec-eyebrow" style={{ marginTop: "36px", marginBottom: "16px" }}>
+         
+          </div>
+          <div className="hero-socials" style={{ marginTop: 0 }}>
             <a
               className="social-btn"
               href={profile.github}

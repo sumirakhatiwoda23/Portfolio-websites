@@ -70,12 +70,15 @@ export default function Hero() {
             <a className="btn btn-solid" href="#projects">
               View my work
             </a>
+            <a className="btn btn-solid" href="/resume.pdf" download>
+              Download CV
+            </a>
           </div>
           <div className="sec-eyebrow" style={{ marginTop: "36px", marginBottom: "16px" }}>
-         
+            Connect with me
           </div>
           <div className="hero-socials" style={{ marginTop: 0 }}>
-            <a
+             <a
               className="social-btn"
               href={profile.github}
               target="_blank"
@@ -84,7 +87,7 @@ export default function Hero() {
             >
               <GithubIcon />
             </a>
-            <a
+             <a
               className="social-btn"
               href={profile.linkedin}
               target="_blank"
